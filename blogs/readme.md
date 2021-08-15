@@ -12,7 +12,8 @@
 * Servlet Context & Filter Config
 * Understanding request & response headers
 * Using Curl with headers
-* Understanding HTTP Methods
+* Understanding HTTP Methods.
+* Using ObjectMapper dependency from jackson.
 * Servlet with POST, PUT, GET, DELETE. Using Postman
 * Connecting with MySQL & JDBC driver
 * Simple CRUD app using MySQL , JDBC , Servlets, Postman
