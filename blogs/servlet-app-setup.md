@@ -45,14 +45,17 @@
 
 
 
-## create below directories
-* src/main/java
-* src/main/webapp/WEB-INF
-* src/test/java
-* src/main/resources
+## Required Directories
+create below directories under servlet-hello-world/ directory.
+* src/main/java/ : for writing java classes that ccontains the actual business logic.
+* src/main/webapp/WEB-INF/: for keeping web.xml
+* src/main/resources/: for files that should be accessible from classpath during runtime of application.
+* src/test/java/: for junit test classes.
+* src/test/resources/: for files that should be accessible from classpath during the execution of test cases.
+
 
 ## web.xml
-* create web.xml under src/main/webapp/WEB_INF
+* create web.xml under src/main/webapp/WEB-INF/
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
