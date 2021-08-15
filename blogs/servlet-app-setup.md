@@ -31,6 +31,7 @@
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+      <!-- below is required servlet dependency -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
@@ -63,3 +64,7 @@
 </web-app>
   
 ```
+
+## build
+* open a cmd inside the directory servlet-hello-world/
+* run the command `mvn clean install`
