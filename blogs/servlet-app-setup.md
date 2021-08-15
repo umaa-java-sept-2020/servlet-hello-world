@@ -1,4 +1,5 @@
-## create a project
+# Servlet App SetUp
+
 * create a directory called servlet-hello-world. Inside servlet-hello-world, add below changes.
 ## pom.xml
 * create pom.xml under servlet-hello-world directory.
