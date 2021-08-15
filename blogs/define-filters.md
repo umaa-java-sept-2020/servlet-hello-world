@@ -91,7 +91,7 @@ public class HomePageRequestFilter implements Filter {
 
   <filter-mapping>
     <filter-name>applicationFilter</filter-name>
-    <url-pattern>/*</url-pattern>
+    <url-pattern>/*</url-pattern> <!-- we want this filter to execute before /home -->
   </filter-mapping>
 
   <filter-mapping>
@@ -138,7 +138,7 @@ public class ApplicationRequestFilter implements Filter {
 <img width="1792" alt="Screenshot 2021-08-15 at 11 10 22 PM" src="https://user-images.githubusercontent.com/17001948/129487428-25caa8e8-02b1-4616-8fe5-33d47983dcbb.png">
 
 
-* Tomcat terminal output
+* Tomcat terminal output. See the order of execution.
 
 <img width="1792" alt="Screenshot 2021-08-15 at 11 13 28 PM" src="https://user-images.githubusercontent.com/17001948/129487507-592cbc65-c903-4713-80f1-057e44ebcab8.png">
 
