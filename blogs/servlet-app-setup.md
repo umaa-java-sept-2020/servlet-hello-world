@@ -1,6 +1,6 @@
 # Servlet App SetUp
 
-* create a directory called servlet-hello-world. Inside servlet-hello-world, add below changes.
+create a directory called servlet-hello-world. Inside servlet-hello-world, add below changes.
 ## pom.xml
 * create pom.xml under servlet-hello-world directory.
 ```xml
@@ -47,11 +47,11 @@
 
 ## Required Directories
 create below directories under servlet-hello-world/ directory.
-* src/main/java/ : for writing java classes that ccontains the actual business logic.
-* src/main/webapp/WEB-INF/: for keeping web.xml
-* src/main/resources/: for files that should be accessible from classpath during runtime of application.
-* src/test/java/: for junit test classes.
-* src/test/resources/: for files that should be accessible from classpath during the execution of test cases.
+* src/main/java/  for writing java classes that ccontains the actual business logic.
+* src/main/webapp/WEB-INF/ for keeping web.xml
+* src/main/resources/ for files that should be accessible from classpath during runtime of application.
+* src/test/java/ for junit test classes.
+* src/test/resources/ for files that should be accessible from classpath during the execution of test cases.
 
 
 ## web.xml
