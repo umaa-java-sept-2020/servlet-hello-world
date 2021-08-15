@@ -65,6 +65,9 @@
   
 ```
 
-## build
+## build & deploy (for every code change)
 * open a cmd inside the directory servlet-hello-world/
 * run the command `mvn clean install`
+* under servlet-hello-world/target/ we wcan locate the .war file.
+* Copy the .war file to tomcat/webapps/ directory.
+* Go to tomcat/bin/ and open cmd. Run `sh catalina.sh jpda run`
