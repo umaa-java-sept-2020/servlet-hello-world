@@ -1,4 +1,4 @@
-<img width="1792" alt="Screenshot 2021-08-15 at 11 10 22 PM" src="https://user-images.githubusercontent.com/17001948/129487406-13f1aca9-7897-4735-bf36-0cabace773e8.png">
+
 * Servlet Filters are classes that implements filter interface.
 
 * It can execute before the execution of another filter / servlet.
@@ -144,7 +144,11 @@ public class ApplicationRequestFilter implements Filter {
 
 
 before: class com.java.filters.ApplicationRequestFilter
+
 before: class com.java.filters.HomePageRequestFilter
+
 class com.java.servlets.HomePageServlet service
+
 after: class com.java.filters.HomePageRequestFilter
+
 after: class com.java.filters.ApplicationRequestFilter
