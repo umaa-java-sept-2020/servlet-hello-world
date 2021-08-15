@@ -67,6 +67,8 @@ public class HomePageRequestFilter implements Filter {
 
 ```
 
+* Build & Deploy. Access localhost:8080/servlet-hello-world/home
+* Watch tomcat/logs access logs.
 ## Define a generic filter that will execute for every request and before all filters.
 
 * For all requests URL pattern should be /*
