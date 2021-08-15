@@ -36,5 +36,5 @@ public class HomePageServlet extends HttpServlet {
   </servlet-mapping>
 ```
 
-* Build and deploy the war to tomcat
-* Access the endpoint localhost:8080/home
+* Build and deploy the war to tomcat. My war name is servlet-hello-world.war.
+* Access the endpoint localhost:8080/servlet-hello-world/home. In this URL `servlet-hello-world` is war name.
