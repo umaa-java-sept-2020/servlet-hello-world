@@ -18,7 +18,7 @@
 * Using Curl with headers
 * Understanding HTTP Methods.
 * Using ObjectMapper dependency from jackson.
-* Servlet with POST, PUT, GET, DELETE. Using Postman
+* Servlet with POST, PUT, GET, DELETE. Using Postman & Curl
 * Connecting with MySQL & JDBC driver
 * Simple CRUD app using MySQL , JDBC , Servlets, Postman
 * State Management using cookies , headers, session
