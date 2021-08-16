@@ -6,9 +6,9 @@
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-servlet.md" target="_blank">Define Servlet(s)</a>
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-filters.md" target="_blank"> Define Filter(s)</a>
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-listeners.md" target="_blank">Define Listener(s)</a>
+* Context Params
 * Servlet Params
 * Filter Params
-* Context Params
 * Servlet Life Cycle
 * Filter Life Cycle
 * Listener Life Cycle
