@@ -6,6 +6,7 @@
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-servlet.md" target="_blank">Define Servlet(s)</a>
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-filters.md" target="_blank"> Define Filter(s)</a>
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-listeners.md" target="_blank">Define Listener(s)</a>
+* Thread in servlet.
 * Context Params
 * Servlet Params
 * Filter Params
@@ -16,6 +17,7 @@
 * Servlet Context & Filter Config
 * Understanding request & response headers
 * Using Curl with headers
+* Extracting Query String & Http Headers
 * Understanding HTTP Methods.
 * Using ObjectMapper dependency from jackson.
 * Servlet with POST, PUT, GET, DELETE. Using Postman & Curl
