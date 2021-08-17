@@ -77,7 +77,10 @@ public class RequestContextListener implements ServletRequestListener {
   </listener>
 ```
 
-Build and Deploy the war file into tomcat webapps. Watch the tomcat logs on the terminal.
+* Build: `mvn clean install`
+* Copy the war file from taget/ into tomcat webapps/.
+* Start the tomcat from bin/ using: `sh catalina.sh run`
+* Watch the tomcat logs on the terminal.
 
 * Screenshot of tomcat logs shows that AppContextListener executed onStartUp of the application.
 <img width="1792" alt="Screenshot 2021-08-16 at 11 44 16 AM" src="https://user-images.githubusercontent.com/17001948/129519252-22c4a816-cd28-41a6-8b99-53e25876a11f.png">
