@@ -7,14 +7,18 @@
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-filters.md" target="_blank"> Define Filter(s)</a>
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-listeners.md" target="_blank">Define Listener(s)</a>
 * Thread in servlet.
-* Context Params
-* Servlet Params
-* Filter Params
+
+
 * Servlet Life Cycle
 * Filter Life Cycle
 * Listener Life Cycle
 * Servlet Context & Servlet Config
 * Servlet Context & Filter Config
+* Context Params
+* Servlet Params
+* Filter Params
+
+
 * Understanding request & response headers
 * Using Curl with headers
 * Extracting Query String & Http Headers
