@@ -12,6 +12,8 @@ public class HomePageServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
       //  super.service(req, resp);
 
+        Thread currentThread = Thread.currentThread();
+        System.out.println("current thread: "+currentThread);
         System.out.println(this.getClass()+" service");
         resp.getWriter().write("home page");
     }
