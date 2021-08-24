@@ -9,9 +9,10 @@
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/servlet-thread.md">Thread in servlet</a>
 
 
-* Servlet Life Cycle
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/servlet-life-cycle.md">Servlet Life Cycle</a>
 * Filter Life Cycle
 * Listener Life Cycle
+* Servlet Context & Context Params
 * Servlet Context & Servlet Config
 * Servlet Context & Filter Config
 * Context Params
