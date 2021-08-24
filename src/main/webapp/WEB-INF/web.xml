@@ -28,9 +28,14 @@
     <servlet-class>com.java.servlets.ServletLifeCycleExample</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>queryStringServlet</servlet-name>
+    <servlet-class>com.java.servlets.QueryStringServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
-    <servlet-name>servletLifeCycle</servlet-name>
-    <url-pattern>/servlet-life-cycle</url-pattern>
+    <servlet-name>queryStringServlet</servlet-name>
+    <url-pattern>/query</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
