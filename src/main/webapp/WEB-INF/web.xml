@@ -23,6 +23,16 @@
     <servlet-class>com.java.servlets.AboutUsServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>servletLifeCycle</servlet-name>
+    <servlet-class>com.java.servlets.ServletLifeCycleExample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletLifeCycle</servlet-name>
+    <url-pattern>/servlet-life-cycle</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>home</servlet-name>
     <url-pattern>/home</url-pattern>
