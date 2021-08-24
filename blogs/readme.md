@@ -22,7 +22,8 @@
 
 * Understanding request & response headers
 * Using Curl with headers
-* Extracting Query String & Http Headers
+* Extracting Query String | <a href ="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/query-string.md">Click</a>
+* Extracting Http Headers
 * Understanding HTTP Methods.
 * Using ObjectMapper dependency from jackson.
 * Servlet with POST, PUT, GET, DELETE. Using Postman & Curl
