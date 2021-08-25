@@ -1,8 +1,12 @@
 # Query Strings
-* These are additional(optional : not mandatory) information passed along with the request URL.
+* These are additional(optional : not mandatory) key_value pair information passed along with the request URL.
+* These are appended at the end of the URL with a question mark. Each key_value pair separated by &
 Example:
 ```text 
 http://localhost:8080/servlet-hello-world/query?id=10,20&name=sachin,rahul&age=47
+http://localhost:8080/servlet-hello-world/query?id=10&name=sachin&age=47
+http://localhost:8080/servlet-hello-world/query?id=10&name=sachin
+http://localhost:8080/servlet-hello-world/query
 ```
 Here id = 10,20 |
 name= sachin, rahul |
