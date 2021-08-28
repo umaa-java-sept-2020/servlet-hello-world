@@ -5,7 +5,15 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
-  
+  <context-param>
+    <param-name>a_context</param-name>
+    <param-value>55</param-value>
+  </context-param>
+  <context-param>
+    <param-name>b_context</param-name>
+    <param-value>66</param-value>
+  </context-param>
+
   <listener>
     <listener-class>com.java.listeners.AppContextListener</listener-class>
   </listener>
@@ -32,6 +40,29 @@
     <servlet-name>queryStringServlet</servlet-name>
     <servlet-class>com.java.servlets.QueryStringServlet</servlet-class>
   </servlet>
+
+
+
+  <servlet>
+    <servlet-name>servletParamsServlet</servlet-name>
+    <servlet-class>com.java.servlets.ServletParams</servlet-class>
+    <init-param>
+      <param-name>x_servlet</param-name>
+      <param-value>100</param-value>
+    </init-param>
+    <init-param>
+      <param-name>y_servlet</param-name>
+      <param-value>200</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>servletParamsServlet</servlet-name>
+    <url-pattern>/params</url-pattern>
+  </servlet-mapping>
+
+
+
 
   <servlet-mapping>
     <servlet-name>queryStringServlet</servlet-name>
