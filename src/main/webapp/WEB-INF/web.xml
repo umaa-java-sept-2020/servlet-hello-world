@@ -59,6 +59,28 @@
     <servlet-class>com.java.servlets.EmployeeServlet</servlet-class>
   </servlet>
 
+
+  <servlet>
+    <servlet-name>signUpServlet</servlet-name>
+    <servlet-class>com.java.servlets.SignUpServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>com.java.servlets.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>signUpServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>employeeServlet</servlet-name>
     <url-pattern>/employees</url-pattern>
