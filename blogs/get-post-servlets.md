@@ -40,10 +40,43 @@ http://localhost:8080/servlet-hello-world/employees \
 -v
 
 curl \
+-X GET \
+-H 'Accept:application/json' \
+-H 'Authorization:bdsjdhjd' \
+http://localhost:8080/servlet-hello-world/employees \
+-d '{"uuid":"f15bdddb-cef5-49df-83ba-da396eb5c897","name":"Michael","age":20}' \
+-v
+
+
+curl \
 -X POST \
 -H 'Accept:application/json' \
 -H 'Authorization:bdsjdhjd' \
 http://localhost:8080/servlet-hello-world/employees \
+-d '{"uuid":"f15bdddb-cef5-49df-83ba-da396eb5c897","name":"Michael","age":20}' \
+-v
+
+curl \
+-X PUT \
+-H 'Accept:application/json' \
+-H 'Authorization:bdsjdhjd' \
+http://localhost:8080/servlet-hello-world/employees \
+-d '{"uuid":"f15bdddb-cef5-49df-83ba-da396eb5c897","name":"Michael","age":20}' \
+-v
+
+curl \
+-X PUT \
+-H 'Accept:application/json' \
+-H 'Authorization:bdsjdhjd' \
+'http://localhost:8080/servlet-hello-world/employees?empId=100' \
+-d '{"uuid":"f15bdddb-cef5-49df-83ba-da396eb5c897","name":"Michael","age":20}' \
+-v
+
+curl \
+-X DELETE \
+-H 'Accept:application/json' \
+-H 'Authorization:bdsjdhjd' \
+'http://localhost:8080/servlet-hello-world/employees?empId=100' \
 -d '{"uuid":"f15bdddb-cef5-49df-83ba-da396eb5c897","name":"Michael","age":20}' \
 -v
 ```
