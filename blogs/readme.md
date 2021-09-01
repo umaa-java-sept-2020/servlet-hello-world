@@ -10,10 +10,10 @@
 
 
 * <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/servlet-life-cycle.md">Servlet Life Cycle</a>
-* Filter Life Cycle
-* Listener Life Cycle
-* Servlet Context & Context Params
-* Servlet Context & Servlet Config
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-filters.md">Filter Life Cycle</a>
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/define-listeners.md">Listener Life Cycle</a>
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/servlet-config-and-context.md">Servlet Context & Context Params</a>
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/servlet-config-and-context.md">Servlet Context & Servlet Config</a>
 * Servlet Context & Filter Config
 * Context Params
 * Servlet Params
@@ -25,8 +25,8 @@
 * Extracting Query String | <a href ="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/query-string.md">Click</a>
 * Extracting Http Headers
 * Understanding HTTP Methods.
-* Using ObjectMapper dependency from jackson.
-* Servlet with POST, PUT, GET, DELETE. Using Postman & Curl
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/blogs/get-post-servlets.md">Using ObjectMapper dependency from jackson.</a>
+* <a href="https://github.com/umaa-java-sept-2020/servlet-hello-world/blob/master/src/main/java/com/java/servlets/EmployeeServlet.java">Servlet with POST, PUT, GET, DELETE. Using Postman & Curl(EXPLAINED WITH CODE)</a>
 * Connecting with MySQL & JDBC driver
 * Simple CRUD app using MySQL , JDBC , Servlets, Postman
 * State Management using cookies , headers, session
