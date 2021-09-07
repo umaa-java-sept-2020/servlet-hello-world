@@ -15,5 +15,18 @@ curl -X POST \
 -d '{"email":"john@gmail.com","password":"abc@124"}' \
 -v
 ```
-* Generate response header: Authorization header.
+* Generate encoded response header: Authorization header.
+* Define expense servlet which can be accessed using Authorization header only.
+```text 
+curl -X GET \
+'http://localhost:8080/servlet-hello-world/api/expenses' \
+-v
+```
+* Define a filter that runs for every request with endpoint as /api/*. This filter should validate the token.
 * In next request if you send Authorization header it can identify you.
+```text 
+curl -X GET \
+-H 'Authorization: eyJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwiZXhwaXJlQXQiOjE2MzEwMjk0NTY3Njl9' \
+'http://localhost:8080/servlet-hello-world/api/expenses' \
+-v
+```

@@ -62,14 +62,24 @@
 
   <servlet>
     <servlet-name>signUpServlet</servlet-name>
-    <servlet-class>com.java.servlets.SignUpServlet</servlet-class>
+    <servlet-class>com.java.api.controller.SignUpServlet</servlet-class>
   </servlet>
 
 
   <servlet>
     <servlet-name>loginServlet</servlet-name>
-    <servlet-class>com.java.servlets.LoginServlet</servlet-class>
+    <servlet-class>com.java.api.controller.LoginServlet</servlet-class>
   </servlet>
+
+  <servlet>
+    <servlet-name>expensesServlet</servlet-name>
+    <servlet-class>com.java.api.controller.ExpensesServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>expensesServlet</servlet-name>
+    <url-pattern>/api/expenses</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>loginServlet</servlet-name>
@@ -135,6 +145,16 @@
       <param-value>205</param-value>
     </init-param>
   </filter>
+
+  <filter>
+    <filter-name>authTokenFilter</filter-name>
+    <filter-class>com.java.api.filters.AuthTokenFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>authTokenFilter</filter-name>
+    <url-pattern>/api/*</url-pattern>
+  </filter-mapping>
 
   <filter-mapping>
     <filter-name>filterParams</filter-name>
