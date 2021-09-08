@@ -16,7 +16,10 @@ curl -X POST \
 -v
 ```
 * Generate encoded response header: Authorization header.
-* Define expense servlet which can be accessed using Authorization header only.
+* On every successful login a new encoded Authorization token should be generated.
+* Define expense servlet (/api/expenses) which can be accessed using Authorization header only.
+* Below curl command is to access the secured resource or endpoint /api/expenses.
+* The endpoint /api/* will be considered as secured.
 ```text 
 curl -X GET \
 'http://localhost:8080/servlet-hello-world/api/expenses' \
