@@ -45,6 +45,7 @@ public class LoginServlet extends HttpServlet {
             resp.setHeader("Authorization",getAuthHeader(registeredUser));
             resp.getWriter().write("login success");
         } else {
+            resp.setStatus(401); // read: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
             resp.getWriter().write("login failed");
         }
 

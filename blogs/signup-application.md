@@ -30,3 +30,5 @@ curl -X GET \
 'http://localhost:8080/servlet-hello-world/api/expenses' \
 -v
 ```
+* 403 Forbidden http status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+* 401 Unauthorized http status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401

@@ -31,7 +31,8 @@ public class AuthTokenFilter implements Filter {
         }
         else {
             HttpServletResponse httpServletResponse = (HttpServletResponse) response;
-            httpServletResponse.setStatus(401);
+            httpServletResponse.setStatus(403); // read : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+            httpServletResponse.getWriter().write("Invalid Authorization token");
             return;
         }
     }
