@@ -35,3 +35,35 @@ curl -X GET \
 ```
 * 403 Forbidden http status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
 * 401 Unauthorized http status: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+# Integrating With JDBC (Java Database Connectivity)
+* Download and install mysql 8.x or mariadb 10.x. It runs on port 3306.
+* The default username for mysql is root and password is empty (not even any blank string).
+* Login command: `mysql -uroot -p`. After this give enter.
+* To add password for root user first login to mysql using above command. Then run below command.
+```text 
+UPDATE mysql.user SET Password=PASSWORD('root_pass') WHERE User='root'; 
+FLUSH PRIVILEGES;
+```
+* Restart mysql.
+* Add below mysql dependency in  pom.xml
+```xml 
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.47</version>
+</dependency> 
+```
+* Create a file called database.properties under src/main/resources.
+* Add below connection details to database.properties
+```text 
+mysql.database.url= jdbc:mysql://localhost:3306/testdb?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+mysql.database.username= root
+mysql.database.password= root_pass
+```
+* Define a class `DatabaseConnectionUtils` to loadDatabaseProperties() and getConnection().
+* Getting a JDBC connection is quite easy.
+```java 
+Connection connection = DriverManager.getConnection(url,username,password);
+```
