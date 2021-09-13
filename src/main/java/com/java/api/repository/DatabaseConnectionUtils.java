@@ -49,6 +49,14 @@ public class DatabaseConnectionUtils {
         return connection;
     }
 
+    public static void close(Connection connection)
+    {
+        try {
+            connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args) {
         System.out.println(DatabaseConnectionUtils.getConnection());
     }

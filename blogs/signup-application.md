@@ -67,3 +67,51 @@ mysql.database.password= root_pass
 ```java 
 Connection connection = DriverManager.getConnection(url,username,password);
 ```
+# Storing / Retrieving User details into the Database
+* Below is User class.
+```java 
+public class User {
+
+    private String uuid;
+    private String email;
+    private String password;
+    private String fullName;
+    
+    // add getters and setters for the above fields
+  }   
+```
+* Create equivalent database table called `TBL_USER` inside the database `testdb` for the above class.
+```text 
+CREATE DATABASE IF NOT EXISTS testdb;
+show databases;
+USE testdb;
+
+CREATE TABLE TBL_USER(
+UUID VARCHAR(100),
+EMAIL VARCHAR(100) UNIQUE,
+FULLNAME VARCHAR(100),
+PASSWORD VARCHAR(100)
+); 
+```
+
+* Define an Interface for database operations as below.
+```java
+public interface IUserRepository {
+
+    /**
+     *  save the user details into the database table
+     *
+     * @param user
+     * @param connection the database connection
+     * @return the uuid of the User
+     * @throws SQLException
+     */
+    String insert(User user, Connection connection) throws SQLException;
+
+    User selectByEmail(String email, Connection connection) throws SQLException;
+
+    User selectByUuid(String uuid, Connection connection) throws SQLException;
+}
+```
+* The implementation class for this interface is `UserRepositoryImpl`.
+* The class `ResultSetExtractor` extracts the rows from the ResultSet.
