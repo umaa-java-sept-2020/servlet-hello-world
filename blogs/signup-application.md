@@ -1,4 +1,6 @@
 ## SignUp Application
+
+Aim of the application is to provide or secure the http endpoints, so that only the logged in user can access the endpoints usiung Authorization header.
 * Define SignUp Servlet (/signup)
 * Store User in a map
 * SignUp user using below command. Every time we start the server.
