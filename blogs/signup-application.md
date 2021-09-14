@@ -62,6 +62,7 @@ mysql.database.url= jdbc:mysql://localhost:3306/testdb?createDatabaseIfNotExist=
 mysql.database.username= root
 mysql.database.password= root_pass
 ```
+* We will read above key & value pairs into java.util.Properties using java code. from properties colelction we can extract value for each key.
 * Define a class `DatabaseConnectionUtils` to loadDatabaseProperties() and getConnection().
 * Getting a JDBC connection is quite easy.
 ```java 
